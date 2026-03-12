@@ -34,3 +34,43 @@ body {
 .exibir {
     transform: scale(135%);
 }
+
+.classe_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.classe_container input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+    background-color: transparent;
+    color: darkorange;
+}
+
+.classe_container button {
+    background-color: transparent;
+    border: 2px solid darkorange;
+    color: darkorange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.classe_container button:hover {
+    background-color: darkorange;
+    color: #000000;
+    transform: scale(110%);
+}
+.classe_container .p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: darkorange;
+}
+

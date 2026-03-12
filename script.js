@@ -1,6 +1,7 @@
 function chamar_binarios() {
   let container = document.querySelector(".chamar-binarios");
-
+  container.classList.add("classe_container");
+  container.innerHTML = ""; // Limpa o conteúdo anterior, se houver
   let inputTamanho = document.createElement("input");
   inputTamanho.type = "number";
   inputTamanho.min = "1";
@@ -40,7 +41,8 @@ function gerarBinarioAleatorio(tamanho) {
 
 function chamar_octais() {
   let container = document.querySelector(".chamar-octais");
-
+  container.classList.add("classe_container");
+  container.innerHTML = ""; // Limpa o conteúdo anterior, se houver
   let inputTamanho = document.createElement("input");
   inputTamanho.type = "number";
   inputTamanho.min = "1";
@@ -76,14 +78,23 @@ function gerarOctalAleatorio(tamanho) {
 
 function chamar_hexadecimais() {
   let container = document.querySelector(".chamar-hexadecimais");
+   container.classList.add("classe_container");
+    container.innerHTML = ""; // Limpa o conteúdo anterior, se houver
+
+
   let inputTamanho = document.createElement("input");
   inputTamanho.type = "number";
   inputTamanho.min = "1";
   inputTamanho.value = "8";
+
+
   let numeros_hexadecimais = document.createElement("p");
   numeros_hexadecimais.textContent = "";
+
+
   let botaoGerar = document.createElement("button");
   botaoGerar.textContent = "Gerar Hexadecimal";
+
   botaoGerar.addEventListener("click", () => {
     let tamanho = parseInt(inputTamanho.value);
     numeros_hexadecimais.textContent = gerarHexadecimalAleatorio(tamanho);
