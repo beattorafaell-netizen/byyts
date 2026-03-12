@@ -35,3 +35,5 @@ function gerarBinarioAleatorio(tamanho) {
   return resultado;
 }
 
+
+
