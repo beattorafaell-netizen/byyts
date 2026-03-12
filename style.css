@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.botao {
+    background-color: transparent;
+    border: 2px solid darkorange;
+    color: darkorange;
+    padding: 20px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: darkorange;
+    color: #000000;
+    transform: scale(135%);
+}
+
+.exibir {
+    transform: scale(135%);
+}
